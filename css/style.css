@@ -978,5 +978,237 @@ footer,
     margin: 10px 0; }
     .sidebar-nav li a {
       text-align: center; } }
+@media only screen and (max-width: 740px) {
+  /* ====== 320px ====== */
+  /* SETTINGS */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 30px; }
+
+  h2 {
+    font-size: 24px; }
+
+  h3 {
+    font-size: 20px; }
+
+  h4 {
+    font-size: 20px; }
+
+  h5 {
+    font-size: 18px; }
+
+  h6 {
+    font-size: 16px; }
+
+  /* GRID */
+  .wrap {
+    width: 320px; }
+
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6 {
+    width: 140px; }
+
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 300px; }
+
+  .col-1-full,
+  .col-2-full,
+  .col-3-full,
+  .col-4-full,
+  .col-5-full,
+  .col-6-full {
+    width: 160px; }
+
+  .col-7-full,
+  .col-8-full,
+  .col-9-full,
+  .col-10-full,
+  .col-11-full,
+  .col-12-full {
+    width: 320px; }
+
+  .col-offset-0,
+  .col-offset-1,
+  .col-offset-2,
+  .col-offset-3,
+  .col-offset-4,
+  .col-offset-5 {
+    margin-left: 10px; }
+
+  .col-offset-6,
+  .col-offset-7,
+  .col-offset-8,
+  .col-offset-9,
+  .col-offset-10,
+  .col-offset-11 {
+    margin-left: 170px; }
+
+  .col-m-1,
+  .col-m-2,
+  .col-m-3,
+  .col-m-4,
+  .col-m-5,
+  .col-m-6 {
+    width: 140px; }
+
+  .col-m-7,
+  .col-m-8,
+  .col-m-9,
+  .col-m-10,
+  .col-m-11,
+  .col-m-12 {
+    width: 300px; }
+
+  .col-m-1-full,
+  .col-m-2-full,
+  .col-m-3-full,
+  .col-m-4-full,
+  .col-m-5-full,
+  .col-m-6-full {
+    width: 160px; }
+
+  .col-m-7-full,
+  .col-m-8-full,
+  .col-m-9-full,
+  .col-m-10-full,
+  .col-m-11-full,
+  .col-m-12-full {
+    width: 320px; }
+
+  .col-m-offset-0,
+  .col-m-offset-1,
+  .col-m-offset-2,
+  .col-m-offset-3,
+  .col-m-offset-4,
+  .col-m-offset-5 {
+    margin-left: 10px; }
+
+  .col-m-offset-6,
+  .col-m-offset-7,
+  .col-m-offset-8,
+  .col-m-offset-9,
+  .col-m-offset-10,
+  .col-m-offset-11 {
+    margin-left: 170px; }
+
+  .col-s-1 {
+    width: 60px; }
+
+  .col-s-2 {
+    width: 140px; }
+
+  .col-s-3 {
+    width: 220px; }
+
+  .col-s-4 {
+    width: 300px; }
+
+  .col-s-1-full {
+    width: 80px; }
+
+  .col-s-2-full {
+    width: 160px; }
+
+  .col-s-3-full {
+    width: 240px; }
+
+  .col-s-4-full {
+    width: 320px; }
+
+  .col-s-offset-0 {
+    margin-left: 10px !important; }
+
+  .col-s-offset-1 {
+    margin-left: 90px; }
+
+  .col-s-offset-2 {
+    margin-left: 170px; }
+
+  .col-s-offset-3 {
+    margin-left: 250px; }
+
+  .percent-grid .grid-s-1 {
+    width: 100%; }
+  .percent-grid .grid-s-2 {
+    width: 50%; }
+  .percent-grid .grid-s-3 {
+    width: 33.33333%; }
+  .percent-grid .grid-s-4 {
+    width: 25%; }
+
+  /* PAGE STYLES */
+  #contact-info {
+    text-align: center; }
+    #contact-info .contact-info-box {
+      float: none; }
+
+  #hero .wrap .vert-wrap #brand #menu-left,
+  #hero .wrap .vert-wrap #brand #brand-logo,
+  #hero .wrap .vert-wrap #brand #menu-right {
+    float: none;
+    width: 100%;
+    padding: 0 30px; }
+  #hero .wrap .vert-wrap #brand #menu-left a,
+  #hero .wrap .vert-wrap #brand #menu-right a {
+    font-size: 18px; }
+  #hero .wrap .vert-wrap #brand #brand-logo {
+    width: 80%;
+    margin: 30px 10%; }
+  #hero .wrap .vert-wrap #brand #menu-left {
+    text-align: left;
+    margin-top: 30px; }
+  #hero .wrap .vert-wrap #brand #menu-right {
+    text-align: right;
+    margin-top: 0; }
+
+  #footer-main .copyright,
+  #footer-main .footer-nav,
+  #footer-main .dev {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; }
+
+  header nav,
+  #header nav {
+    text-align: center; }
+    header nav ul,
+    #header nav ul {
+      display: inline-block; }
+      header nav ul li a,
+      #header nav ul li a {
+        font-size: 14px; }
+        header nav ul li a:hover .decorator,
+        #header nav ul li a:hover .decorator {
+          display: none; }
+      header nav ul li.active a .decorator,
+      #header nav ul li.active a .decorator {
+        display: none; }
+
+  #breadcrumbs {
+    display: none; }
+
+  #page-title {
+    margin-top: 40px; }
+
+  #tag-cloud #tags {
+    height: 300px; }
+
+  #sidebar {
+    width: 300px;
+    margin-left: 10px; }
+
+  footer .col-s-4,
+  #footer .col-s-4 {
+    margin-bottom: 20px;
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
