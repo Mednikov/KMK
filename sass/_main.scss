@@ -1,0 +1,109 @@
+/* ============================ */
+/* ============================ */
+/* MAIN STYLES */
+html.start,
+body.start{
+    height: 100%;
+}
+body{
+    @include fontstack;
+    font-size: 14px;
+    line-height: 1.5em;
+    background: $grey;
+    color: $black;
+    &.start{
+        position: relative;
+        min-height: 650px;
+        background: $grey;
+        background: -webkit-radial-gradient( rgba(1, 13, 2, 0), rgba(1, 13, 2, .35) ); /* Safari 5.1 to 6.0 */
+        background:    -moz-radial-gradient( rgba(1, 13, 2, 0), rgba(1, 13, 2, .35) ); /* For Firefox 3.6 to 15 */
+        background:      -o-radial-gradient( rgba(1, 13, 2, 0), rgba(1, 13, 2, .35) ); /* For Opera 11.6 to 12.0 */
+        background:         radial-gradient( rgba(1, 13, 2, 0), rgba(1, 13, 2, .35) ); /* Standard syntax */
+    }
+}
+
+#contact-info{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 0 50px;
+    .contact-info-box{
+        display: inline-block;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+
+#hero{
+    height: 100%;
+    .wrap{
+        display: table;
+        height: 100%;
+        .vert-wrap{
+            display: table-cell;
+            vertical-align: middle;
+            #brand{
+                #menu-left,
+                #brand-logo,
+                #menu-right{
+                    width: 25%;
+                    padding: 0 50px;
+                }
+                #menu-left,
+                #menu-right{
+                    a{
+                        font-size: 30px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                #menu-left{
+                    margin-top: 6*$margin;
+                    padding-left: 0;
+                    text-align: right;
+                }
+                #brand-logo{
+                    width: 50%;
+                    text-align: center;
+                    img{
+                        display: inline-block;
+                    }
+                }
+                #menu-right{
+                    margin-top: 20*$margin;
+                    padding-right: 0;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+#footer-main{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 0 50px;
+    color: $dark-grey;
+    .copyright,
+    .footer-nav,
+    .dev{
+        width: 33%;
+    }
+    .copyright{
+        text-align: left;
+    }
+    .footer-nav{
+        text-align: center;
+    }
+    .dev{
+        text-align: right;
+    }
+}
