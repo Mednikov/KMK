@@ -352,3 +352,20 @@ small, .small{
 .col-offset-11{
 	margin-left: 1110px;
 }
+
+
+
+.percent-grid{
+	.grid-1{
+		width: 100%;
+	}
+	.grid-2{
+		width: 50%;
+	}
+	.grid-3{
+		width: 33.333333%
+	}
+	.grid-4{
+		width: 25%;
+	}
+}

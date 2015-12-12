@@ -266,9 +266,13 @@ header,
     padding: 4*$margin 0;
     background: $dark-white;
     @include box-shadow;
+    .user{
+        padding: 2*$margin 4*$margin;
+    }
 }
 
 #content-container{
+    min-height: 500px;
     margin-left: 0;
     background: $white;
     @include box-shadow;
@@ -331,6 +335,9 @@ header,
                 background: $grey;
             }
         }
+    }
+    &.single{
+        margin: 0;
     }
 }
 

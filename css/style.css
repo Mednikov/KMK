@@ -286,6 +286,15 @@ small, .small {
 .col-offset-11 {
   margin-left: 1110px; }
 
+.percent-grid .grid-1 {
+  width: 100%; }
+.percent-grid .grid-2 {
+  width: 50%; }
+.percent-grid .grid-3 {
+  width: 33.33333%; }
+.percent-grid .grid-4 {
+  width: 25%; }
+
 /* ============================ */
 /* ============================ */
 /* MAIN STYLES */
@@ -492,8 +501,11 @@ header,
   -webkit-box-shadow: 0px 0px 25px 0px rgba(1, 1, 1, 0.15);
   -moz-box-shadow: 0px 0px 25px 0px rgba(1, 1, 1, 0.15);
   box-shadow: 0px 0px 25px 0px rgba(1, 1, 1, 0.15); }
+  #sidebar .user {
+    padding: 20px 40px; }
 
 #content-container {
+  min-height: 500px;
   margin-left: 0;
   background: #fff;
   -webkit-box-shadow: 0px 0px 25px 0px rgba(1, 1, 1, 0.15);
@@ -543,6 +555,8 @@ header,
     font-size: 16px; }
     .sidebar-nav li a:hover {
       background: #e2e4e4; }
+  .sidebar-nav.single {
+    margin: 0; }
 
 footer,
 #footer {
