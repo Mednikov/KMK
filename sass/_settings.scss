@@ -147,6 +147,9 @@ small, .small{
 	p{
 		line-height: 1.5em;
 	}
+	&.inner{
+		padding: 4*$margin !important;
+	}
 }
 
 .text-center{

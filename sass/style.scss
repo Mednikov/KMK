@@ -57,6 +57,13 @@ $wrap:      1200px;
           transition: all $duration ease-in-out;
 }
 
+// Specific mixins
+@mixin box-shadow{
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(1,1,1,.15);
+     -moz-box-shadow: 0px 0px 25px 0px rgba(1,1,1,.15);
+          box-shadow: 0px 0px 25px 0px rgba(1,1,1,.15);
+}
+
 
 // FONTS
 @import 'fonts';

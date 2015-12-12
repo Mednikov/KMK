@@ -4,6 +4,7 @@
 html.start,
 body.start{
     height: 100%;
+    color: $black;
 }
 body{
     @include fontstack;
@@ -11,7 +12,7 @@ body{
     line-height: 1.5em;
     // background: $grey;
     background: $middle-grey;
-    color: $black;
+    color: $dark-grey;
     &.start{
         position: relative;
         min-height: 650px;
@@ -250,12 +251,85 @@ header,
         text-transform: uppercase;
         font-size: 18px;
         overflow: hidden;
-        -webkit-box-shadow: 0px 0px 25px 0px rgba(1,1,1,.15);
-           -moz-box-shadow: 0px 0px 25px 0px rgba(1,1,1,.15);
-                box-shadow: 0px 0px 25px 0px rgba(1,1,1,.15);
+        @include box-shadow;
         span{
             display: table-cell;
             vertical-align: middle;
+        }
+    }
+}
+
+#sidebar{
+    width: 300px;
+    margin-top: 2*$margin;
+    margin-right: 0;
+    padding: 4*$margin 0;
+    background: $dark-white;
+    @include box-shadow;
+}
+
+#content-container{
+    margin-left: 0;
+    background: $white;
+    @include box-shadow;
+}
+
+.user{
+    padding: 2*$margin;
+    p{
+        margin-bottom: 0;
+    }
+    img{
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        @include border-radius(50%);
+        margin-bottom: $margin;
+    }
+    .user-info{
+        margin-bottom: $margin;
+        .username{
+            @include fontcaption;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    .user-description{
+        margin-bottom: $margin;
+    }
+    .user-links{
+        color: $text-grey;
+        a{
+            color: $text-grey;
+        }
+    }
+}
+
+.separator{
+    border-bottom: 1px solid $grey;
+}
+
+.sidebar-nav{
+    margin: 2*$margin 0;
+    li{
+        &.active{
+            a{
+                background: $grey;
+                // border-top: 1px solid $grey;
+                // border-bottom: 1px solid $grey;
+            }
+        }
+        a{
+            display: block;
+            width: 100%;
+            text-align: right;
+            padding: $margin 4*$margin;
+            text-decoration: none;
+            font-size: 16px;
+            &:hover{
+                background: $grey;
+            }
         }
     }
 }
