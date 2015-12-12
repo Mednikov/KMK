@@ -63,7 +63,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 0;
   font-size: 36px;
   font-weight: bold;
-  line-height: normal; }
+  line-height: normal;
+  color: #566170; }
   p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
     margin-top: 40px; }
 
@@ -116,9 +117,11 @@ small, .small {
 /* ELEMENTS */
 .dark-bg {
   color: #fff; }
-  .dark-bg a:hover {
+  .dark-bg a {
     color: #fff;
     text-decoration: underline; }
+    .dark-bg a:hover {
+      color: #e2e4e4; }
 
 .text ol, .text ul, .text dir, .text menu, .text dd {
   margin-left: 40px;
@@ -292,7 +295,7 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 1.5em;
-  background: #e2e4e4;
+  background: #cccccc;
   color: #111; }
   body.start {
     position: relative;
@@ -371,5 +374,118 @@ body {
     text-align: center; }
   #footer-main .dev {
     text-align: right; }
+
+/* INNER PAGE STYLES */
+header,
+#header {
+  background: #566170;
+  padding: 60px 0 25px; }
+  header nav,
+  #header nav {
+    margin-top: 17px; }
+    header nav ul li,
+    #header nav ul li {
+      float: left;
+      margin: 0 20px; }
+      header nav ul li a,
+      #header nav ul li a {
+        position: relative;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none !important; }
+        header nav ul li a:hover,
+        #header nav ul li a:hover {
+          text-decoration: none; }
+          header nav ul li a:hover .decorator,
+          #header nav ul li a:hover .decorator {
+            display: block; }
+        header nav ul li a .decorator,
+        #header nav ul li a .decorator {
+          display: none;
+          position: absolute;
+          width: 100%;
+          height: 5px;
+          bottom: -26px;
+          left: 0;
+          background: #e2e4e4; }
+      header nav ul li.active a .decorator,
+      #header nav ul li.active a .decorator {
+        display: block; }
+  header .header-info,
+  #header .header-info {
+    margin-top: 17px; }
+    header .header-info .dropdown,
+    #header .header-info .dropdown {
+      margin-left: 40px; }
+      header .header-info .dropdown a,
+      #header .header-info .dropdown a {
+        text-decoration: none; }
+        header .header-info .dropdown a:hover,
+        #header .header-info .dropdown a:hover {
+          text-decoration: none; }
+
+#breadcrumbs {
+  background: #e2e4e4;
+  padding: 20px 0; }
+  #breadcrumbs ul li {
+    float: left; }
+    #breadcrumbs ul li a {
+      color: #a9aeb3;
+      text-decoration: none;
+      margin-right: 20px; }
+      #breadcrumbs ul li a:after {
+        font-family: FontAwesome, 'PT Sans', sans-serif;
+        content: "\f105";
+        margin-left: 20px; }
+    #breadcrumbs ul li.last a {
+      color: #566170; }
+      #breadcrumbs ul li.last a:after {
+        display: none; }
+
+#content {
+  padding: 20px 0 80px;
+  background: #e2e4e4; }
+  #content #page-title h1, #content #page-title h2, #content #page-title h3, #content #page-title h4, #content #page-title h5, #content #page-title h6, #content #page-title h2, #content #page-title h3, #content #page-title h4, #content #page-title h5, #content #page-title h6 {
+    margin: 0;
+    font-weight: normal; }
+
+#tag-cloud {
+  padding: 40px;
+  border: 2px solid #759f85; }
+  #tag-cloud #tags {
+    height: 300px; }
+    #tag-cloud #tags span a {
+      padding: 20px;
+      text-transform: uppercase;
+      text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
+      #tag-cloud #tags span a:hover {
+        color: #fff !important; }
+
+.submenu .submenu-item {
+  display: table;
+  float: left;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 40px 0;
+  background: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(1, 1, 1, 0.15);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(1, 1, 1, 0.15);
+  box-shadow: 0px 0px 25px 0px rgba(1, 1, 1, 0.15); }
+  .submenu .submenu-item span {
+    display: table-cell;
+    vertical-align: middle; }
+
+footer,
+#footer {
+  padding: 40px 0 60px;
+  background: #cccccc; }
+  footer p,
+  #footer p {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
