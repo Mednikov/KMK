@@ -310,6 +310,16 @@ header,
     }
 }
 
+.user-list{
+    vertical-align: baseline;
+    font-size: 0;
+    .user{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+    }
+}
+
 .separator{
     border-bottom: 1px solid $grey;
 }
