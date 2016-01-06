@@ -1,4 +1,5 @@
 env/
 layout/
+__pycache__/
 
 .sass-cache/
