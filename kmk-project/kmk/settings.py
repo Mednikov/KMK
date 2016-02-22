@@ -150,7 +150,9 @@ INSTALLED_APPS = (
     'djangocms_inherit',
     'djangocms_link',
     'reversion',
-    'kmk'
+
+    'kmk',
+    'kmk.apps.staff'
 )
 
 LANGUAGES = (

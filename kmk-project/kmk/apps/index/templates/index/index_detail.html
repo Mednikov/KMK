@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{# Reset blocks #}
+{% block header %}{% endblock header %}
+{% block breadcrumbs %}{% endblock breadcrumbs %}
+{% block footer %}{% endblock footer %}
+
+{% block bodyclass %}start{% endblock bodyclass %}
+{% block htmlclass %}start{% endblock htmlclass %}
+
+{% block content %}
+  <section id="contact-info" class="clearfix">
+    <div class="contact-info-box right">
+      <p><a href="">Москва, Самый длинный переулок, д. 71а, стр. 6</a></p>
+      <p><span class="text-grey">Тел.:</span> +7 (901) 123-45-67</p>
+      <p><a href="">info@kmk.ru</a></p>
+    </div>
+  </section>
+
+  <section id="hero">
+    <div class="wrap">
+      <div class="vert-wrap">
+        <div id="brand" class="clearfix">
+          <div id="menu-left" class="left">
+            <a href="">О&nbsp;компании</a>
+          </div>
+          <div id="brand-logo" class="left">
+            <img src="{{STATIC_URL}}img/logo-ver.png" alt="">
+          </div>
+          <div id="menu-right" class="right">
+            <a href="">Услуги</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer-main" class="clearfix">
+    <div class="copyright left">© 2015 «КМК»</div>
+    <div class="footer-nav left"><a href="">СМИ о нас</a></div>
+    <div class="dev right">Разработка сайта: <a href="">Медников Павел</a></div>
+  </section>
+{% endblock content %}
