@@ -4,10 +4,33 @@
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
 {% block content %}
-    <div class="sidebar">
-        {% placeholder "sidebar" %}
+  <section id="content">
+    <div class="wrap">
+      <div class="col-12-full clearfix">
+
+        <div class="row">
+          <div id="page-title" class="col-12 text-center">
+            <h1>{% page_attribute "page_title" %}</h1>
+          </div>
+        </div>
+
+        <div class="row clerafix">
+
+          <div id="sidebar" class="col-3 left">
+            <div class="sidebar-placeholder">
+              {% placeholder "sidebar" %}
+            </div>
+            <ul class="sidebar-nav single">
+              {% include "menu/sidebar_menu.html" %}
+            </ul>
+          </div>
+
+          <div id="content-container" class="col-9 col-m-12 right text inner">
+            {% placeholder "content" %}
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="content">
-        {% placeholder "content" %}
-    </div>
+  </section>
 {% endblock content %}

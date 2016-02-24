@@ -190,6 +190,7 @@ CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
+    # ('sidebar_left_submenu.html', 'Sidebar Left (Submenu)'),
     ('sidebar_right.html', 'Sidebar Right')
 )
 

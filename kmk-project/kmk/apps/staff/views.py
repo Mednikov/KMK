@@ -8,7 +8,7 @@ from .models import StaffMember
 
 class StaffListView(ListView):
     model = StaffMember
-    queryset = StaffMember.objects.order_by('order').all()
+    queryset = StaffMember.objects.order_by('seniority').all()
 
     # def render_to_response(self, context, **response_kwargs):
         
