@@ -1,0 +1,11 @@
+{% load menu_tags %}
+
+
+
+{% for child in children %}
+<a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}" class="submenu-item col-4 col-m-6 col-s-4 text-center">
+	<span>{{ child.get_menu_title }}</span>
+</a>
+{% endfor %}
+
+

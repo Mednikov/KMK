@@ -66,7 +66,7 @@
           </div>
 
 
-          <div class="col-3 col-m-4 col-m-12 right clearfix">
+          <div class="col-3 col-m-4 col-s-4 right clearfix">
             <div class="header-info clearfix">
               <div class="dropdown right">
                 <a href="" id="lang" data-toggle="dropdown">
@@ -121,12 +121,13 @@
 
 
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     {% render_block "js" %}
+    {% block scripts %}{% endblock scripts %}
   </body>
 </html>

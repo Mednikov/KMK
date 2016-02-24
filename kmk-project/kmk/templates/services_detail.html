@@ -20,7 +20,21 @@
             <div class="sidebar-placeholder">
               {% placeholder "sidebar" %}
             </div>
-            <ul class="sidebar-nav single">
+            <div class="user text-center">
+              {% placeholder "staff_image" %}
+              <div class="user-info">
+                <div class="username">{% placeholder "staff_name" %}</div>
+                <div class="position">{% placeholder "staff_seniority" %}</div>
+              </div>
+              <div class="user-description">
+                {% placeholder "staff_bio" %}
+              </div>
+              <div class="user-links">
+                {% placeholder "staff_links" %}
+              </div>
+            </div>
+            <div class="separator"></div>
+            <ul class="sidebar-nav">
               {% include "menu/sidebar_menu.html" %}
             </ul>
           </div>
