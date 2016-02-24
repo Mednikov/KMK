@@ -152,7 +152,8 @@ INSTALLED_APPS = (
     'reversion',
 
     'kmk',
-    'kmk.apps.staff'
+    'kmk.apps.staff',
+    'kmk.apps.map'
 )
 
 LANGUAGES = (

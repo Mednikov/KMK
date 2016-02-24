@@ -16,6 +16,7 @@ urlpatterns = i18n_patterns('',
         {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^select2/', include('django_select2.urls')),
     url(r'^staff/', include('kmk.apps.staff.urls')),
+    url(r'^map/', include('kmk.apps.map.urls')),
     url(r'^', include('cms.urls')),
 
 )
