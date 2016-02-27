@@ -1,6 +1,6 @@
 {% load cms_tags menu_tags sekizai_tags %}
 <!doctype html>
-<html>
+<html class="{% block htmlclass %}{% endblock htmlclass %}">
   <head>
     <title>{% block title %}KMK{% endblock title %}</title>
     
@@ -40,7 +40,7 @@
 
 
 
-  <body>
+  <body class="{% block bodyclass %}{% endblock bodyclass %}">
     {% cms_toolbar %}
 
     {% block header %}
