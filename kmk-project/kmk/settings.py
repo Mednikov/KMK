@@ -177,25 +177,25 @@ CMS_LANGUAGES = {
             'name': gettext('en'),
             'public': True,
             'redirect_on_fallback': True,
-            'hide_untranslated': False,
+            'hide_untranslated': True,
         },
     ],
     'default': {
         'public': True,
         'redirect_on_fallback': True,
-        'hide_untranslated': False,
+        'hide_untranslated': True,
     },
 }
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('home.html', 'Home'),
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
     # ('sidebar_left_submenu.html', 'Sidebar Left (Submenu)'),
-    ('sidebar_right.html', 'Sidebar Right'),
+    # ('sidebar_right.html', 'Sidebar Right'),
     ('services_list.html', 'Services List'),
-    ('services_detail.html', 'Services Detail')
+    ('services_detail.html', 'Services Detail'),
+    ('home.html', 'Home')
 )
 
 CMS_PERMISSION = True

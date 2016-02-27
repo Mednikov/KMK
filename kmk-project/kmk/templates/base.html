@@ -13,10 +13,11 @@
     <link rel="shortcut icon" href="{{STATIC_URL}}favicon.ico" type="image/x-icon">
     
     <meta name="title" content="KMK" />
-    <meta name="description" content="KMK" />
+    <meta name="description" content="{% page_attribute meta_description %}"/>
+    <meta name="keywords" content="{% page_attribute meta_keywords %}"/>
 
     <meta property="og:title" content="KMK" />
-    <meta property="og:description" content="KMK" />
+    <meta property="og:description" content="{% page_attribute meta_description %}" />
     <meta property="og:site_name" content="KMK">
     <meta property="og:locale" content="ru" > 
     <meta property="og:image" content="img/og-logo.png">
@@ -49,7 +50,7 @@
         <div class="col-12-full clearfix">
           
           <div class="logo-container col-3 col-m-12 left">
-            <a class="logo" href="/"><img src="{{STATIC_URL}}img/logo-hor.png" alt=""></a>
+            {% static_placeholder "logo" %}
           </div>
 
 
@@ -79,7 +80,7 @@
               </div>
 
               <div class="phone right">
-                +7 (901) 123-45-67
+                {% static_placeholder "header phone" %}
               </div>
             </div>
           </div>
@@ -105,13 +106,13 @@
       <div class="wrap">
         <div class="col-12-full clearfix">
           <div class="col-6 col-s-4 left text-grey">
-            <p>© 2015 «КМК»</p>
-            <p>Разработка сайта: <a href="">Медников Павел</a></p>
+            <p>{% static_placeholder "footer copyright" %}</p>
+            <p>Разработка сайта: <a href="http://pavelmednikov.com">Медников Павел</a></p>
           </div>
           <div class="col-6 col-s-4 right text-right">
-            <p><a href="">Москва, Самый длинный переулок, д. 71а, стр. 6</a></p>
-            <p><span class="text-grey">Тел.:</span> +7 (901) 123-45-67</p>
-            <p><a href="">info@kmk.ru</a></p>
+            <p>{% static_placeholder "footer address" %}</p>
+            <p>{% static_placeholder "footer phone" %}</p>
+            <p>{% static_placeholder "footer email" %}</p>
           </div>
         </div>
       </div>

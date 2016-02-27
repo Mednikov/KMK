@@ -327,7 +327,8 @@ body {
   top: 50px;
   left: 0;
   width: 100%;
-  padding: 0 50px; }
+  padding: 0 50px;
+  font-size: 16px; }
   #contact-info .contact-info-box {
     display: inline-block; }
     #contact-info .contact-info-box p {
@@ -381,9 +382,11 @@ body {
   #footer-main .dev {
     width: 33%; }
   #footer-main .copyright {
-    text-align: left; }
+    text-align: left;
+    font-size: 16px; }
   #footer-main .footer-nav {
-    text-align: center; }
+    text-align: center;
+    font-size: 16px; }
   #footer-main .dev {
     text-align: right; }
 
@@ -436,6 +439,9 @@ header,
         header .header-info .dropdown a:hover,
         #header .header-info .dropdown a:hover {
           text-decoration: none; }
+    header .header-info p,
+    #header .header-info p {
+      margin-bottom: 0; }
 
 #breadcrumbs {
   background: #e2e4e4;
@@ -470,9 +476,14 @@ header,
     #tag-cloud #tags span a {
       padding: 20px;
       text-transform: uppercase;
+      -webkit-transition: all 0.15s ease-in-out;
+      -moz-transition: all 0.15s ease-in-out;
+      -o-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
       text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
       #tag-cloud #tags span a:hover {
-        color: #fff !important; }
+        color: #fff !important;
+        font-size: 1.05em; }
 
 .submenu .submenu-item {
   display: table;

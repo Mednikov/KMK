@@ -25,13 +25,13 @@
       <div class="vert-wrap">
         <div id="brand" class="clearfix">
           <div id="menu-left" class="left">
-            {% placeholder "menu-link-left" %}
+            {% placeholder "menu link left" %}
           </div>
           <div id="brand-logo" class="left">
-            <img src="{{STATIC_URL}}img/logo-ver.png" alt="">
+            {% placeholder "home logo" %}
           </div>
           <div id="menu-right" class="right">
-            {% placeholder "menu-link-right" %}
+            {% placeholder "menu link right" %}
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@
 
   <section id="footer-main" class="clearfix">
     <div class="copyright left">{% placeholder "copyright" %}</div>
-    <div class="footer-nav left"><a href="">СМИ о нас</a></div>
-    <div class="dev right">Разработка сайта: <a href="">Медников Павел</a></div>
+    <div class="footer-nav left">{% placeholder "footer link" %}</div>
+    <div class="dev right">Разработка сайта: <a href="http://pavelmednikov.com">Медников Павел</a></div>
   </section>
 {% endblock content %}
