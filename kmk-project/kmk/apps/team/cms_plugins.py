@@ -6,7 +6,7 @@ from cms.plugin_pool import plugin_pool
 from .models import TeamPluginModel
 
 class TeamPlugin(CMSPluginBase):
-    name = u'Team'
+    name = u'Сотрудники (сетка)'
     model = TeamPluginModel
     render_template = 'team\_team_plugin.html'
 
