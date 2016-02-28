@@ -439,6 +439,9 @@ header,
         header .header-info .dropdown a:hover,
         #header .header-info .dropdown a:hover {
           text-decoration: none; }
+      header .header-info .dropdown #lang,
+      #header .header-info .dropdown #lang {
+        text-transform: uppercase; }
     header .header-info p,
     #header .header-info p {
       margin-bottom: 0; }

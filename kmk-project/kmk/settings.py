@@ -167,14 +167,14 @@ CMS_LANGUAGES = {
     1: [
         {
             'code': 'ru',
-            'name': gettext('ru'),
+            'name': gettext('Русский'),
             'public': True,
             'redirect_on_fallback': True,
             'hide_untranslated': False,
         },
         {
             'code': 'en',
-            'name': gettext('en'),
+            'name': gettext('English'),
             'public': True,
             'redirect_on_fallback': True,
             'hide_untranslated': True,
