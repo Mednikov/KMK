@@ -1,6 +1,6 @@
 {% load cms_tags sekizai_tags staticfiles thumbnail %}
 
-<div class="user-list percent-grid clearfix">
+<!-- <div class="user-list percent-grid clearfix"> -->
   {% thumbnail instance.photo '136x136' crop subject_location=instance.photo.subject_location as photo %}
   <div class="user grid-3 grid-m-2 grid-s-1 text-center">
     <img src="{{ photo.url }}" alt="{{ instance.full_name }}">
@@ -16,4 +16,4 @@
       <p>{{ instance.bio }}</p>
     </div>
   </div>
-</div>
+<!-- </div> -->
