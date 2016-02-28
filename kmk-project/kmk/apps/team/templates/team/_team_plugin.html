@@ -1,0 +1,17 @@
+<div class="user-list percent-grid clearfix">
+{% comment %} 
+  {% thumbnail instance.photo '136x136' crop subject_location=instance.photo.subject_location as photo %}
+{% endcomment %} 
+  <div class="user grid-3 grid-m-2 grid-s-1 text-center">
+    {% comment %} <img src="{{ photo.url }}" alt="{{ instance.full_name }}"> {% endcomment %} 
+    <div class="user-info">
+      <p class="username">{{ instance.full_name }}</p>
+      <p class="position">{{ instance.seniority }}</p>
+    </div>
+    <div class="user-links">
+      <p>{{ instance.bio }}</p>
+      <!-- <p class="user-mail"><a href="">tom.hardy@fakemail.com</a></p>
+      <p class="user-phone">+7 (555) 273-47-10</p> -->
+    </div>
+  </div>
+</div>
