@@ -282,11 +282,15 @@ header,
     }
 }
 
+#content-narrow,
 #content-container{
     min-height: 500px;
-    margin-left: 0;
     background: $white;
     @include box-shadow;
+}
+
+#content-container{
+    margin-left: 0;
 }
 
 .user{

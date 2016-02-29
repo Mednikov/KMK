@@ -191,6 +191,7 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
+    ('fullwidth_narrow.html', 'Fullwidth Narrow'),
     ('sidebar_left.html', 'Sidebar Left'),
     # ('sidebar_left_submenu.html', 'Sidebar Left (Submenu)'),
     # ('sidebar_right.html', 'Sidebar Right'),
