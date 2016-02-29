@@ -363,9 +363,16 @@ small, .small{
 		width: 50%;
 	}
 	.grid-3{
-		width: 33.333333%
+		width: 33.333333%;
 	}
 	.grid-4{
 		width: 25%;
+	}
+
+	.grid-2-3{
+		width: 66.666666%;
+	}
+	.grid-3-4{
+		width: 75%;
 	}
 }
