@@ -595,8 +595,10 @@ footer,
   #footer p {
     margin-bottom: 0; }
 
-.media-plugin .media-thumbnail {
-  padding-right: 20px; }
+.media-plugin {
+  margin-bottom: 40px; }
+  .media-plugin .media-thumbnail {
+    padding-right: 20px; }
 
 @media only screen and (max-width: 1365px) {
   /* ====== 960px ====== */

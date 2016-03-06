@@ -156,6 +156,7 @@ INSTALLED_APPS = (
     'kmk.apps.map',
     'kmk.apps.team',
     'kmk.apps.media',
+    'kmk.apps.divider',
 )
 
 LANGUAGES = (
