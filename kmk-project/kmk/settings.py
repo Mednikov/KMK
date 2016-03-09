@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@=n14+cx4vjcl9e-0w_rfl^*z#q_j6%*#**-tgg518nd*(a6va'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -209,9 +209,9 @@ CMS_PLACEHOLDER_CONF = {}
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'HOST': 'localhost',
-        'NAME': 'project.db',
+        'ENGINE': 'django.db.backends.',
+        'HOST': '',
+        'NAME': '',
         'PASSWORD': '',
         'PORT': '',
         'USER': ''
@@ -232,3 +232,10 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+
+
+try:
+    from kmk.local_settings import *
+except ImportError:
+    pass

@@ -5,3 +5,6 @@ layout
 env
 db.sqlite3
 .DS_Store
+
+settings.py
+project.db
