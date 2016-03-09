@@ -1,0 +1,17 @@
+<section id="breadcrumbs">
+  <div class="wrap">
+    <div class="col-12-full clearfix">
+      <div class="col-12">
+        <ul class="clearfix">
+        {% for ance in ancestors %}
+          {% if not forloop.last %}
+          <li><a href="{{ ance.get_absolute_url }}">{{ ance.get_menu_title }}</a></li>
+          {% else %}
+          <li class="last"><span class="active">{{ ance.get_menu_title }}</span></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

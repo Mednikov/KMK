@@ -1,0 +1,32 @@
+{% load cms_tags sekizai_tags staticfiles thumbnail %}
+
+<div class="media-plugin percent-grid clearfix">
+  
+  {% if instance.image %}
+
+  <div class="media-thumbnail left grid-4 grid-m-2 grid-s-1 text-center">
+    <img src="{% thumbnail instance.image '250x250' crop %}" alt="{{ instance.heading }}">
+  </div>
+  <div class="right grid-3-4 grid-m-2 grid-s-1">
+    {% if instance.heading_link != '' %}
+    <h4><a href="{{instance.heading_link}}">{{instance.heading}}</a></h4>
+    {% else %}
+    <h4>{{instance.heading}}</h4>
+    {% endif %}
+    <div>{{instance.description}}</div>
+  </div>
+
+  {% else %}
+
+  <div class="right grid-1">
+    {% if instance.heading_link != '' %}
+    <h4><a href="{{instance.heading_link}}">{{instance.heading}}</a></h4>
+    {% else %}
+    <h4>{{instance.heading}}</h4>
+    {% endif %}
+    <div>{{instance.description}}</div>
+  </div>
+
+  {% endif %}
+
+</div>

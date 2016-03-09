@@ -1,0 +1,10 @@
+{% load cms_tags sekizai_tags staticfiles thumbnail %}
+
+  {% thumbnail instance.img '200x200' crop subject_location=instance.img.subject_location as photo %}
+  <div class="user image-grid grid-3 grid-m-2 grid-s-1 text-center">
+    {% if instance.url != "" %}
+    <a href="{{ instance.url }}"><img src="{{ photo.url }}" alt="{{ instance.alt }}"></a>
+    {% else %}
+    <img src="{{ photo.url }}" alt="{{ instance.alt }}">
+    {% endif %}
+  </div>

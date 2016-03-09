@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+  <section id="content">
+    <div class="wrap">
+      <div class="col-12-full clearfix">
+
+        <div class="row">
+          <div id="page-title" class="col-9 col-m-12 col-offset-3 text-center">
+            <h1>{% page_attribute "page_title" %}</h1>
+          </div>
+        </div>
+
+        <div class="row clerafix">
+
+          <div id="sidebar" class="col-3 left">
+            <div class="sidebar-placeholder">
+              {% placeholder "sidebar" %}
+            </div>
+            <div class="user text-center">
+              {% placeholder "staff_image" %}
+              <div class="user-info">
+                <div class="username">{% placeholder "staff_name" %}</div>
+                <div class="position">{% placeholder "staff_seniority" %}</div>
+              </div>
+              <div class="user-description">
+                {% placeholder "staff_bio" %}
+              </div>
+              <div class="user-links">
+                {% placeholder "staff_links" %}
+              </div>
+            </div>
+            <div class="separator"></div>
+            <ul class="sidebar-nav">
+              {% include "menu/sidebar_menu.html" %}
+            </ul>
+          </div>
+
+          <div id="content-container" class="col-9 col-m-12 right text inner">
+            {% placeholder "content" %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+{% endblock content %}

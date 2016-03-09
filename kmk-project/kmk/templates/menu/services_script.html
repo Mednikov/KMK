@@ -1,0 +1,9 @@
+{% load menu_tags %}
+
+
+
+{% for child in children %}
+    {text: "{{ child.get_menu_title }}", weight: 9.4, link: '{{ child.attr.redirect_url|default:child.get_absolute_url }}'},
+{% endfor %}
+
+

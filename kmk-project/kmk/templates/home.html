@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{# Reset blocks #}
+{% block header %}{% endblock header %}
+{% block breadcrumbs %}{% endblock breadcrumbs %}
+{% block footer %}{% endblock footer %}
+
+{% block bodyclass %}start{% endblock bodyclass %}
+{% block htmlclass %}start{% endblock htmlclass %}
+
+{% block content %}
+  <section id="contact-info" class="clearfix">
+    <div class="contact-info-box right">
+      <p>{% placeholder "address" %}</p>
+      <p>{% placeholder "phone" %}</p>
+      <p>{% placeholder "email" %}</p>
+    </div>
+  </section>
+
+  <section id="hero">
+    <div class="wrap">
+      <div class="vert-wrap">
+        <div id="brand" class="clearfix">
+          <div id="menu-left" class="left">
+            {% placeholder "menu link left" %}
+          </div>
+          <div id="brand-logo" class="left">
+            {% placeholder "home logo" %}
+          </div>
+          <div id="menu-right" class="right">
+            {% placeholder "menu link right" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer-main" class="clearfix">
+    <div class="copyright left">{% placeholder "copyright" %}</div>
+    <div class="footer-nav left">{% placeholder "footer link" %}</div>
+    <div class="dev right">Разработка сайта: <a href="http://pavelmednikov.com">Медников Павел</a></div>
+  </section>
+{% endblock content %}

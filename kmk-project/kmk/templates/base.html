@@ -1,0 +1,126 @@
+{% load cms_tags menu_tags sekizai_tags i18n %}
+<!doctype html>
+<html class="{% block htmlclass %}{% endblock htmlclass %}">
+  <head>
+    <title>{% block title %}KMK{% endblock title %}</title>
+    
+    <meta charset="UTF-8">
+    <meta name="HandheldFriendly" content="true"/>  
+    <meta name="MobileOptimized" content="320"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+    <link rel="image_src" href="img/simple_logo.jpg">
+    <link rel="shortcut icon" href="{{STATIC_URL}}favicon.ico" type="image/x-icon">
+    
+    <meta name="title" content="KMK" />
+    <meta name="description" content="{% page_attribute meta_description %}"/>
+    <meta name="keywords" content="{% page_attribute meta_keywords %}"/>
+
+    <meta property="og:title" content="KMK" />
+    <meta property="og:description" content="{% page_attribute meta_description %}" />
+    <meta property="og:site_name" content="KMK">
+    <meta property="og:locale" content="ru" > 
+    <meta property="og:image" content="img/og-logo.png">
+
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--[if IE 7]>
+      <link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/style.css" />
+    <!--[if IE]>
+      <link rel="stylesheet" type="text/css" href="css/style-IE.css" />
+    <![endif]-->
+    {% render_block "css" %}
+  </head>
+
+
+
+
+  <body class="{% block bodyclass %}{% endblock bodyclass %}">
+    {% cms_toolbar %}
+
+    {% block header %}
+    <header id="header" class="dark-bg">
+      <div class="wrap">
+        <div class="col-12-full clearfix">
+          
+          <div class="logo-container col-3 col-m-12 left">
+            {% static_placeholder "logo" %}
+          </div>
+
+
+          <div class="col-6 col-m-8 col-s-4 left">
+            <nav>
+              <ul class="clearfix">
+                <!-- <li><a href="">О нас<span class="decorator"></span></a></li>
+                <li class="active"><a href="">Услуги<span class="decorator"></span></a></li>
+                <li><a href="">СМИ<span class="decorator"></span></a></li>
+                <li><a href="">Контакты<span class="decorator"></span></a></li> -->
+                {% show_menu 0 0 100 100 %}
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-3 col-m-4 col-s-4 right clearfix">
+            <div class="header-info clearfix">
+              {% language_chooser %}
+
+              <div class="phone right">
+                {% static_placeholder "header phone" %}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    {% endblock header %}
+
+
+    {% block breadcrumbs %}
+    {% show_breadcrumb 0 "menu/breadcrumb.html" %}
+    {% endblock breadcrumbs %}
+
+
+
+    {% block content %}{% endblock content %}
+
+
+
+    {% block footer %}
+    <footer id="footer">
+      <div class="wrap">
+        <div class="col-12-full clearfix">
+          <div class="col-6 col-s-4 left text-grey">
+            <p>{% static_placeholder "footer copyright" %}</p>
+            <p>Разработка сайта: <a href="http://pavelmednikov.com">Медников Павел</a></p>
+          </div>
+          <div class="col-6 col-s-4 right text-right">
+            <p>{% static_placeholder "footer address" %}</p>
+            <p>{% static_placeholder "footer phone" %}</p>
+            <p>{% static_placeholder "footer email" %}</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {% endblock footer %}
+
+
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% render_block "js" %}
+    {% block scripts %}{% endblock scripts %}
+  </body>
+</html>
