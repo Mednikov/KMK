@@ -1,5 +1,10 @@
-env/
-layout/
-__pycache__/
+*.pyc
+__pycache__
+.sass-cache
+layout
+env
+db.sqlite3
+.DS_Store
 
-.sass-cache/
+settings.py
+project.db
